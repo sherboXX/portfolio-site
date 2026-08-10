@@ -1149,3 +1149,113 @@ section.block:last-of-type {
   align-items: center;
   gap: 8px;
 }
+
+/* =========================================================
+   Mobile Responsiveness
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .bento-wrap {
+    padding: 20px 20px 64px;
+  }
+
+  .site-nav .container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 12px 20px;
+    row-gap: 10px;
+  }
+
+  .site-nav .brand span {
+    display: none;
+  }
+
+  .site-nav .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .site-nav .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav .nav-links a {
+    white-space: nowrap;
+  }
+
+  section.block {
+    padding: 44px 0;
+  }
+
+  .section-title {
+    font-size: 23px;
+    margin-bottom: 26px;
+  }
+
+  .bento-headline h1 {
+    font-size: 30px;
+  }
+
+  .bento-headline p {
+    max-width: none;
+  }
+
+  .profile-header h1 {
+    font-size: 23px;
+  }
+
+  .profile-header .header-main,
+  .profile-header .header-stat {
+    padding: 28px 24px;
+  }
+
+  .contact-card {
+    padding: 30px 24px;
+  }
+
+  .project-card.featured .project-body {
+    padding: 24px 22px;
+  }
+
+  .summary-grid,
+  .project-grid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bento-headline {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .bento-facts .big,
+  .profile-header .header-stat .big {
+    font-size: 36px;
+  }
+
+  .bento-category h3 {
+    font-size: 19px;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-links {
+    width: 100%;
+  }
+
+  .contact-links .btn {
+    flex: 1 1 auto;
+  }
+}
